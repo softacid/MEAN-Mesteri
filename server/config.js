@@ -8,8 +8,8 @@ module.exports = {
     'port': 465,
     'secure': true, // use SSL
     'auth': {
-      'user': 'info@mesteri.com',
-      'pass': 'Acidulatu24'
+      'user': 'info@test.com',
+      'pass': 'pass'
     }
   }
 };
