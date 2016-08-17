@@ -1,0 +1,9 @@
+<!-- Forgot password screen-->
+<form>
+    <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="email" ng-model="email">
+    </div>
+    <input class="btn btn-success btn-lg" ng-click="resetPassword(email)" type="submit" value="Reset Password">
+    <input class="btn btn-default btn-lg" ng-click="goTo('login')" type="submit" value="Cancel">
+</form>

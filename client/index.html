@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app='mesteriApp'>
+<head>
+    <title>Mesteri si meseriasi</title>
+    <base href="/">
+    <!--Vendor CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" href="shared/style.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="appCtrl">
+    <nav class='navbar navbar-default'>
+        <div class='container'>
+            <div ng-click="goTo('/login')" ng-show="!isLoggedIn">Login</div>
+            <div ng-click="doLogout()" ng-show="isLoggedIn">logout</div>
+        </div>
+    </nav>
+
+    <div class='container'>
+        <div ng-view></div>
+    </div>
+    <footer></footer>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <script src='appConfig.js'></script>
+    <script src='shared/shared.concat.js'></script>
+</body>
+</html>
